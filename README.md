@@ -31,5 +31,5 @@ cd source
 ```
 Run main.py 
 ```
-python main.py 
+python cap_main.py 
 ```
