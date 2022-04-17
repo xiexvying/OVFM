@@ -33,3 +33,5 @@ Run main.py
 ```
 python cap_main.py 
 ```
+## Q&A
+If you have any questions about the program or the paper, please feel free to contact us directly at *zhuosd@e.gzhu.edu.cn*
