@@ -15,6 +15,8 @@ if __name__ == '__main__':
     contribute_error_rate, window_size_denominator, batch_size_denominator, decay_coef_change,decay_choice,shuffle =get_cap_hyperparameter(dataset)
     MASK_NUM=1
     X = pd.read_csv("../dataset/MaskData/"+dataset+"/X_process.txt",sep=" " ,header=None)
+    if dataset == "a8a":
+        X = abs(X)
     Y_label = pd.read_csv("../dataset/Datalabel/" + dataset + "/Y_label.txt", sep=' ', header=None)
     X_masked=mask_types(X,MASK_NUM,seed=1) #arbitrary setting Nan
     X = X.values
